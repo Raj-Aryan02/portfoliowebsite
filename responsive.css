@@ -1,0 +1,208 @@
+/* BREAKPOINTS */
+
+@media (max-width:1200px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+
+    .subscribe-form {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 764px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h2 {
+        font-size: 5rem;
+
+    }
+
+    .home-img img {
+        margin-top: 4rem;
+        width: 55vw;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img {
+        width: 60vw;
+        /* margin-top: 4rem; */
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .signup h2 {
+        margin-bottom: 4.5rem;
+    }
+
+}
+
+
+@media (max-width: 617px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-img img {
+        width: 55vw;
+        height: 38rem;
+
+    }
+
+    .about-img img {
+        height: 44rem;
+    }
+
+
+}
+
+@media (max-width: 568px) {
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form img {
+        width: 55vw;
+        height: 30rem;
+
+    }
+
+    .about-img img {
+        height: 39rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+
+    .home-img img {
+        width: 60vw;
+
+    }
+
+    .about-img img {
+        width: 65vw;
+    }
+
+    .skills-column .title {
+        font-size: 2.2rem;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+    .signup .right h2 {
+        font-size: 4rem;
+    }
+
+
+    .signup .subscribe-form img {
+        width: 45vw;
+        height: 30rem;
+    }
+
+
+}
+
+
+@media (max-width:365px) {
+    .home-img img {
+        width: 80vw;
+        height: 40rem;
+    }
+
+    .about-img img {
+        width: 90vw;
+        height: 40rem;
+    }
+
+
+
+    .skills-column .title {
+        font-size: 2.1rem;
+    }
+
+    .signup .subscribe-form img {
+        height: 26rem;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
