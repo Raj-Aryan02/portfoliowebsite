@@ -6,23 +6,25 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 :root {
-    --bg-color: #000640;
-    --second-bg-color: rgb(4, 0, 112);
+    /* --bg-color: #000640; */
+    --bg-color: #121213;
+    /* --second-bg-color: rgb(4, 0, 112); */
+    --second-bg-color: rgb(0, 0, 0);
     --text-color: #fff;
     --main-color: #ff0000;
     --font1: 'baloo bhaiya 2', cursive;
     --font2: 'Roboto', sans-serif;
-    
+
 }
 
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-    
+
 }
 
 body {
@@ -50,9 +52,10 @@ section {
 }
 
 
-.header.sticky{
+.header.sticky {
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
+
 .logo {
     font-size: 2.5rem;
     color: var(--text-color);
@@ -80,7 +83,7 @@ section {
 
 }
 
-#menu-icon:hover{
+#menu-icon:hover {
     cursor: pointer;
 }
 
@@ -98,7 +101,7 @@ section {
 
 span {
     color: var(--main-color);
-}
+}   
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
@@ -117,6 +120,21 @@ span {
     border: 0.2rem solid var(--main-color);
     box-shadow: 0 0 0.6rem var(--main-color);
     border-radius: 4rem;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .home-content p {
@@ -244,7 +262,7 @@ span {
     left: 0;
     width: 0%;
     height: 100%;
-    background: linear-gradient(to right, rgb(41, 48, 255), rgb(0, 0, 0, 0.1));
+    background: linear-gradient(to right, rgb(81, 81, 86), rgb(0, 0, 0, 0.1));
     z-index: -1;
     transition: 0.5s;
 }
@@ -256,7 +274,6 @@ span {
 .skills-content .progress {
     padding: 1rem 0;
 }
-
 
 .skills-content .progress h3 {
     font-size: 1.5rem;
@@ -286,7 +303,7 @@ span {
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
     width: 60%;
 }
-
+ 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
     width: 40%;
 }
@@ -404,7 +421,7 @@ span {
     position: relative;
     align-items: center;
     justify-content: center;
-    margin:  auto;
+    margin: auto;
     margin-bottom: 2rem;
     width: calc(100% -20px);
     max-width: 62rem;
@@ -469,9 +486,10 @@ span {
     cursor: pointer;
 }
 
-.contact{
+.contact {
     background: var(--second-bg-color);
 }
+
 .contact h2 {
     margin-bottom: 2rem;
 }
